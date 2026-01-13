@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loja Brainrot – Fuja do Tsunami</title>
 
   <!-- Fonte vampírica -->
@@ -10,125 +10,78 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    * {
+    body {
+      background-color: #000;
+      color: #eee;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: radial-gradient(circle at top, #1a0000, #000);
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-      min-height: 100vh;
     }
 
     header {
       text-align: center;
-      padding: 40px 20px;
+      padding: 30px 15px;
+      background-color: #0f0f0f;
       border-bottom: 2px solid darkred;
     }
 
     header h1 {
       font-family: 'Metal Mania', cursive;
-      font-size: 3rem;
       color: crimson;
-      text-shadow: 0 0 10px red;
+      font-size: 3rem;
+      margin: 0;
     }
 
     header p {
       margin-top: 10px;
-      opacity: 0.8;
+      color: #aaa;
     }
 
-    .container {
-      max-width: 1200px;
+    main {
+      max-width: 900px;
       margin: 40px auto;
       padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
     }
 
-    /* CAIXA DO ITEM */
     .item {
-      background: linear-gradient(145deg, #0a0000, #1a0000);
+      background-color: #111;
       border: 2px solid darkred;
-      border-radius: 16px;
-      padding: 25px;
-      box-shadow: 0 0 20px rgba(255, 0, 0, 0.15);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .item::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(120deg, transparent, rgba(255,0,0,0.15), transparent);
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-
-    .item:hover::before {
-      opacity: 1;
-    }
-
-    .item:hover {
-      transform: translateY(-10px) scale(1.02);
-      box-shadow: 0 0 35px rgba(255, 0, 0, 0.4);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
     }
 
     .item h2 {
       font-family: 'Metal Mania', cursive;
-      font-size: 2rem;
       color: #ff2a2a;
-      margin-bottom: 15px;
-      text-shadow: 0 0 6px red;
+      font-size: 2rem;
+      margin-top: 0;
     }
 
     .item p {
-      font-size: 0.95rem;
+      color: #ccc;
       line-height: 1.5;
-      margin-bottom: 20px;
-      opacity: 0.9;
     }
 
-    /* BOTÃO VIVO */
     .buy-btn {
-      display: inline-block;
+      display: block;
       width: 100%;
-      text-align: center;
-      padding: 14px 20px;
+      padding: 14px;
       font-size: 1rem;
       font-weight: 600;
       color: #fff;
-      background: linear-gradient(45deg, darkred, crimson);
+      background-color: darkred;
       border: none;
-      border-radius: 12px;
+      border-radius: 8px;
       cursor: pointer;
-      text-decoration: none;
-      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.3s;
-      box-shadow: 0 6px 0 #5c0000;
-    }
-
-    .buy-btn:hover {
-      background: linear-gradient(45deg, crimson, red);
-      box-shadow: 0 8px 15px rgba(255,0,0,0.5);
-    }
-
-    .buy-btn:active {
-      transform: translateY(6px) scale(0.97);
-      box-shadow: 0 2px 0 #5c0000;
     }
 
     footer {
       text-align: center;
-      padding: 30px 10px;
-      border-top: 2px solid darkred;
-      opacity: 0.6;
+      padding: 20px;
+      color: #777;
       font-size: 0.85rem;
+      border-top: 1px solid #222;
     }
   </style>
 </head>
@@ -136,27 +89,27 @@
 
   <header>
     <h1>Loja Brainrot</h1>
-    <p>Fuja do Tsunami • Itens Especiais</p>
+    <p>Fuja do Tsunami • Itens do Jogo</p>
   </header>
 
-  <main class="container">
+  <main>
 
     <!-- ITEM MODELO (COPIE E COLE PARA ADICIONAR OUTROS) -->
     <div class="item">
       <h2>Brainrot 1T / segundo</h2>
       <p>
-        Aumente sua geração de dinheiro no jogo <strong>Fuja do Tsunami</strong>.
-        Ideal para evoluir mais rápido e dominar o mapa.
+        Item para aumentar sua geração de dinheiro no jogo Fuja do Tsunami.
       </p>
-      <a class="buy-btn" href="https://livepix.gg/vitorbrainrot00710" target="_blank">
+      <button class="buy-btn" type="button"
+        onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')">
         Comprar agora
-      </a>
+      </button>
     </div>
 
   </main>
 
   <footer>
-    © 2026 • Loja não oficial • Estilo Brainrot
+    © 2026 • Loja Brainrot • Site não oficial
   </footer>
 
 </body>

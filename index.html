@@ -22,19 +22,21 @@
       text-align: center;
       padding: 30px 15px;
       background-color: #0f0f0f;
-      border-bottom: 2px solid darkred;
+      border-bottom: 1px solid #222; /* menos vermelho */
     }
 
     header h1 {
       font-family: 'Metal Mania', cursive;
-      color: crimson;
+      color: #fff; /* branco em vez de vermelho */
       font-size: 3rem;
       margin: 0;
+      letter-spacing: 2px; /* letras mais espaçadas */
     }
 
     header p {
       margin-top: 10px;
-      color: #aaa;
+      color: #bbb;
+      letter-spacing: 1px;
     }
 
     main {
@@ -45,7 +47,7 @@
 
     .item {
       background-color: #111;
-      border: 2px solid darkred;
+      border: 1px solid #333; /* cinza escuro */
       border-radius: 12px;
       padding: 20px;
       margin-bottom: 30px;
@@ -53,14 +55,16 @@
 
     .item h2 {
       font-family: 'Metal Mania', cursive;
-      color: #ff2a2a;
+      color: #e5e5e5; /* menos vermelho */
       font-size: 2rem;
       margin-top: 0;
+      letter-spacing: 1.5px;
     }
 
     .item p {
       color: #ccc;
-      line-height: 1.5;
+      line-height: 1.6;
+      letter-spacing: 0.5px;
     }
 
     .buy-btn {
@@ -70,10 +74,11 @@
       font-size: 1rem;
       font-weight: 600;
       color: #fff;
-      background-color: darkred;
-      border: none;
+      background-color: #1a1a1a; /* preto/cinza */
+      border: 1px solid #444;
       border-radius: 8px;
       cursor: pointer;
+      letter-spacing: 1px;
     }
 
     footer {
@@ -83,166 +88,60 @@
       font-size: 0.85rem;
       border-top: 1px solid #222;
     }
+
+    /* STICKERS */
+    .sticker {
+      position: fixed;
+      width: 80px;
+      opacity: 0.85;
+      pointer-events: none;
+    }
+
+    .sticker.bat {
+      top: 20px;
+      left: 20px;
+    }
+
+    .sticker.blood {
+      bottom: 20px;
+      right: 20px;
+    }
+  
+    /* STICKERS */
+    .sticker {
+      position: fixed;
+      width: 70px;
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    .sticker.bat {
+      top: 15px;
+      left: 15px;
+    }
+
+    .sticker.blood {
+      bottom: 15px;
+      right: 15px;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Loja do Vitor</h1>
-    <p>Fuja do Tsunami Para Brainrots (Estamos online - LIVE ON)</p>
+    <h1>Loja Brainrot</h1>
+    <p>Fuja do Tsunami • Itens do Jogo</p>
   </header>
 
-  <main>
-
-    <!-- ITEM MODELO (COPIE E COLE PARA ADICIONAR OUTROS) -->
-    <div class="item">
-      <h2>BRAINROT $1T p/ segundo</h2>
-      <p>
-       CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$1,00
-      </p>
-      <button class="buy-btn" type="button"
-        onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')">
-        Comprar agora
-      </button>
-    </div>
-
-  </main>
-
-   <div class="item">
-      <h2>Brainrot $5T P/ segundo</h2>
-      <p>
-        CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$4,00
-      </p>
-      <button class="buy-btn" type="button"
-        onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')">
-        Comprar agora
-      </button>
-    </div>
-
-  </main>
-
-   <div class="item">
-      <h2>Brainrot $10T p/ segundo</h2>
-      <p>
-        CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$6,50
-      </p>
-      <button class="buy-btn" type="button"
-        onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')">
-        Comprar agora
-      </button>
-    </div>
-
-  </main>
-
-   <div class="item">
-      <h2>Brainrot $15T p/ segundo</h2>
-      <p>
-        CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$9,00
-      </p>
-      <button class="buy-btn" type="button"
-        onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')">
-        Comprar agora
-      </button>
-    </div>
-
-  </main>
-
-    <div class="item">
-      <h2>Brainrot $20T p/ segundo</h2>
-      <p>
-        CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$10,50
-      </p>
-      <button class="buy-btn" type="button"
-        onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')">
-        Comprar agora
-      </button>
-    </div>
-
-  </main>
-
-   <div class="item">
-      <h2>Brainrot $30T p/ segundo</h2>
-      <p>
-        CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$15,00
-      </p>
-      <button class="buy-btn" type="button"
-        onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')">
-        Comprar agora
-      </button>
-    </div>
-
-  </main>
-
-   <div class="item">
-      <h2>Brainrot $50T p/ segundo</h2>
-      <p>
-        CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$ 24,00
-      </p>
-      <button class="buy-btn" type="button"
-        onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')">
-        Comprar agora
-      </button>
-    </div>
-
-  </main>
-
-   <div class="item">
-      <h2>Brainrot $100T p/ segundo</h2>
-      <p>
-        CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$37,00
-      </p>
-      <button class="buy-btn" type="button"
-        onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')">
-        Comprar agora
-      </button>
-    </div>
-
-  </main>
-
-    <div class="item">
-      <h2>Brainrot $240T p/ segundo</h2>
-      <p>
-        CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$ 49,90
-      </p>
-      <button class="buy-btn" type="button"
-        onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')">
-        Comprar agora
-      </button>
-    </div>
-
-  </main>
-
-   <div class="item">
-      <h2>Brainrot $500T p/ segundo</h2>
-      <p>
-        CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$ 63,00
-      </p>
-      <button class="buy-btn" type="button"
-        onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')">
-        Comprar agora
-      </button>
-    </div>
-
-  </main>
-
-   <div class="item">
-      <h2>Brainrot $37,46Qd p/ segundo</h2>
-      <p>
-        CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$ 196,00
-      </p>
-      <button class="buy-btn" type="button"
-        onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')">
-        Comprar agora
-      </button>
-    </div>
-
-  </main>
+  <main> <!-- ITEM MODELO (COPIE E COLE PARA ADICIONAR OUTROS) --> <div class="item"> <h2>BRAINROT $1T p/ segundo</h2> <p> CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$1,00 </p> <button class="buy-btn" type="button" onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')"> Comprar agora </button> </div> </main> <div class="item"> <h2>Brainrot $5T P/ segundo</h2> <p> CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$4,00 </p> <button class="buy-btn" type="button" onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')"> Comprar agora </button> </div> </main> <div class="item"> <h2>Brainrot $10T p/ segundo</h2> <p> CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$6,50 </p> <button class="buy-btn" type="button" onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')"> Comprar agora </button> </div> </main> <div class="item"> <h2>Brainrot $15T p/ segundo</h2> <p> CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$9,00 </p> <button class="buy-btn" type="button" onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')"> Comprar agora </button> </div> </main> <div class="item"> <h2>Brainrot $20T p/ segundo</h2> <p> CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$10,50 </p> <button class="buy-btn" type="button" onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')"> Comprar agora </button> </div> </main> <div class="item"> <h2>Brainrot $30T p/ segundo</h2> <p> CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$15,00 </p> <button class="buy-btn" type="button" onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')"> Comprar agora </button> </div> </main> <div class="item"> <h2>Brainrot $50T p/ segundo</h2> <p> CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$ 24,00 </p> <button class="buy-btn" type="button" onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')"> Comprar agora </button> </div> </main> <div class="item"> <h2>Brainrot $100T p/ segundo</h2> <p> CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$37,00 </p> <button class="buy-btn" type="button" onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')"> Comprar agora </button> </div> </main> <div class="item"> <h2>Brainrot $240T p/ segundo</h2> <p> CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$ 49,90 </p> <button class="buy-btn" type="button" onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')"> Comprar agora </button> </div> </main> <div class="item"> <h2>Brainrot $500T p/ segundo</h2> <p> CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$ 63,00 </p> <button class="buy-btn" type="button" onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')"> Comprar agora </button> </div> </main> <div class="item"> <h2>Brainrot $37,46Qd p/ segundo</h2> <p> CLIQUE NO BOTÃO ABAIXO PARA ADIQUIRIR AGORA - R$ 196,00 </p> <button class="buy-btn" type="button" onclick="window.open('https://livepix.gg/vitorbrainrot00710', '_blank')"> Comprar agora </button> </div> </main>
 
   <footer>
     © 2026 • Loja Brainrot • Site não oficial
   </footer>
 
+  <!-- STICKERS TEMÁTICOS (SEM ANIMAÇÃO) -->
+  <img src="bat.png" class="sticker bat" alt="morcego">
+  <img src="blood.png" class="sticker blood" alt="sangue">
+
 </body>
 </html>
-
-
